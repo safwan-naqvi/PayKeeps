@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_text">Search Product</string>
+    <string name="dashboard_title">Discover Your Product</string>
+    <string name="featured_products">Our Featured Products</string>
+    <string name="featured_products_description">Most Demanded Products!</string>
+    <string name="our_product">Our Products</string>
+    <string name="view_all">View All</string>
+    <string name="Our_Products">Products</string>
+    <string name="categories_product">Category</string>
+    <string name="new_product_desc">Product Description</string>
+    <string name="new_product_price">Price</string>
+    <string name="dashboard_title_retailer">Admin Dashboard</string>
+    <string name="most_viewed_product">Products</string>
+    <string name="dashboard_title_add_product">Add New Product</string>
+    <string name="new_product_name">Product Name</string>
+    <string name="new_product_category">Product Category</string>
+    <string name="new_product_qty">Qty.</string>
+    <string name="add_new_product">Add Product</string>
+    <string name="setting_update">Update</string>
+    <string name="change_profile_image">Change Your Profile</string>
+    <string name="full_email">Enter Email Address</string>
+    <string name="homedashboardstatusbar">Account Summary</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_customer">Customers</string>
+    <string name="nav_transaction">Transactions</string>
+    <string name="selectcustomerdashboardheading">Add New Customer</string>
+    <string name="selectcustomerdashboardparagraph1">All Customers</string>
+    <string name="editbutton">Save</string>
+    <string name="formdashboardheading">+92-0123456789</string>
+    <string name="debitbalancetext">Debit</string>
+    <string name="homedashboardparagraph2">Till Last Transaction</string>
+    <string name="homedashboardparagraph3">All Transactions</string>
+    <string name="homedashboardparagraph4">See All</string>
+    <string name="customerphonenumber">+92-123456789</string>
+    <string name="transactiondate">24 July 2020 10:00 AM</string>
+    <string name="selectcustomerdashboardstatusbar">Our Customers</string>
+    <string name="registrationheading">Enter Your Phone Number</string>
+    <string name="transactionamountdebit">-10000</string>
+    <string name="product_detail">Product Details</string>
+</resources>

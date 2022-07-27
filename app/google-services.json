@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "576250936208",
+    "firebase_url": "https://paykeeps-b8569-default-rtdb.firebaseio.com",
+    "project_id": "paykeeps-b8569",
+    "storage_bucket": "paykeeps-b8569.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576250936208:android:1d2ff4354c1bb8c0445115",
+        "android_client_info": {
+          "package_name": "com.example.paykeeperfyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576250936208-ujc6k82j53cao4affuu24qffq7gql1rd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOXyo4kVDXiZ-l1g4QwEbRuJQrTZF41aE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576250936208-ujc6k82j53cao4affuu24qffq7gql1rd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

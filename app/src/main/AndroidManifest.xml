@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paykeeperfyp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PayKeeperFYP">
+        <activity
+            android:name=".User.UserKhataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.UsersRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.RequestAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Management.ActivityTransactionList"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Management.transaction_chat"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Management.managerRegister"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Management.managerDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddNewProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.ForgetPasswordSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.SetNewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.RegisteredSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.VerifyOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.RegisterActivityThree"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.RegisterActivityTwo"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCredential.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntroductoryScreen.introductoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onBoardScreen.onBoardScreen"
+            android:exported="false" />
+        <activity
+            android:name=".startActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.allyants.notifyme.NotificationPublisher" />
+        <receiver
+            android:name="com.allyants.notifyme.BootNotifyMe"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_user_req"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".User.RequestAdminActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_user_req"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_user_dash_req"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="20dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:navigationIcon="@drawable/menu_icon" />
+
+        <TextView
+            android:id="@+id/no_product_tv_req"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/open_extrabold"
+            android:gravity="center"
+            android:text="Products Coming Soon!"
+            android:textSize="28sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/req_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Admin"
+            android:layout_margin="20dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/proxima_nova"
+            android:layout_below="@+id/toolbar_user_dash_req"
+            />
+
+        <EditText
+            android:id="@+id/request_body"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/req_tv"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textMultiLine"
+            android:hint="Enter Your Message"
+            android:fontFamily="@font/proxima_nova"
+            android:gravity="start"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/submit_req"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="Submit"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_below="@+id/request_body"
+            android:fontFamily="@font/open_extrabold"
+            android:background="@color/yellow"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

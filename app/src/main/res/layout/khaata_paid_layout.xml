@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_margin="3dp"
+    android:padding="16dp"
+    android:elevation="1dp"
+    android:background="@drawable/round_button_one">
+
+    <ImageView
+        android:id="@+id/paid_payment_ico"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/paid_amount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/paid_payment_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/open_extrabold"
+        android:gravity="left"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/paid_payment_ico"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/paid_payment_reason"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova"
+        android:gravity="left"
+        android:text="Reason"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/paid_payment_date"
+        app:layout_constraintTop_toBottomOf="@+id/paid_payment_date" />
+
+    <TextView
+        android:id="@+id/paid_payment_return_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova"
+        android:gravity="left"
+        android:text="Reason"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/paid_payment_date"
+        app:layout_constraintTop_toBottomOf="@+id/paid_payment_reason" />
+
+    <TextView
+        android:id="@+id/paid_payment_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/open_extrabold"
+        android:gravity="right"
+        android:text="14000/-"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/paid_payment_ico"
+        app:layout_constraintTop_toBottomOf="@+id/paid_payment_return_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
